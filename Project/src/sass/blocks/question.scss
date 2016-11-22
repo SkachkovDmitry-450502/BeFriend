@@ -1,0 +1,213 @@
+@import "../variables.scss";
+
+.questionWrap {
+    background: $white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    &__stats {
+        border-top: 1px solid $grey;
+    }
+
+    &__stat {
+        padding: 20px 40px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $error;
+
+        $svgSize: 40px;
+
+        svg {
+            height: $svgSize;
+            width: $svgSize;
+            margin-right: 20px;
+            
+            vertical-align: middle;
+        }
+
+        .time {
+            
+        }
+
+        .points {
+
+        }
+    }
+
+    &__results {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .gameResult {
+
+        p {
+            margin: 0 0 15px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        &__pointsWrap {
+            margin-bottom: 20px;
+            font-size: 7em;
+            color: #4caf50;
+
+            svg {
+                width: 150px;
+                vertical-align: middle;
+            }
+        }
+        
+        &__socialButtons {
+
+            .social__network {
+                margin-left: 0;
+                padding: 0;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            
+            $svgSize: 50px;
+            .vk svg{
+                width: $svgSize;
+                height: $svgSize;
+                fill: #5280A4;
+            }
+
+            .tw svg {
+                width: $svgSize;
+                height: $svgSize;
+                fill: #00ACED;
+            }
+        }
+
+    }
+}
+
+.question {
+
+    &__text { 
+        padding: 20px 40px;
+        font-size: 1.4em;
+        font-weight: bold;
+        background: white;
+        border-bottom: 1px solid $grey;
+
+        @media only screen and (max-width: $screen_medium) {
+            font-size: 1.2em;
+        }
+
+        @media only screen and (max-width: $screen_small) {
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+    }
+
+    &__image {
+        float: left;
+        padding: 40px;
+        background: white;
+
+        .question__img {
+            background: white url("../img/loader.gif") 50% 50% no-repeat;
+        }
+
+        @media only screen and (max-width: $screen_medium) {
+            float: none;
+            text-align: center;
+            padding: 20px; 
+        }
+
+        @media only screen and (max-width: $screen_small) {
+            font-size: 1em;
+        }
+    }
+
+    &__answers {
+        padding: 40px; 
+        
+        @media only screen and (max-width: $screen_medium) {
+            margin-bottom: 15px;
+        }
+
+        .question__image + & {
+            margin-bottom: 20px;
+            padding-left: 280px; // 280 image + 40 margin-left
+            padding-bottom: 0px;
+
+            @media only screen and (max-width: $screen_medium) {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    &__answer {
+        display: block;
+        float: left;
+        width: 47.5%;
+        margin-right: 5%;
+        margin-bottom: 25px;
+        padding: 20px 0;
+        font-size: 1.2em;
+        text-align: center;
+        background: #F5F5F5;
+        color: $darkGrey;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &.right {
+            background-color: #C5E1A5;
+
+            &:hover {
+                background-color: #C5E1A5;
+                color: $darkGrey;
+                text-decoration: none;
+            }
+        }
+
+        &.wrong {
+            background-color: #EF9A9A; 
+
+            &:hover {
+                background-color: #EF9A9A;
+                color: $darkGrey;
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            background: #EEEEEE;
+            color: $darkGrey;
+            text-decoration: none;
+        }
+        
+        &:active {
+            background: #BDBDBD;
+        } 
+
+        @media only screen and (max-width: $screen_medium) {
+            font-size: 1em;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+
+        @media only screen and (max-width: $screen_small) {
+            padding: 15px 0;
+            margin-bottom: 10px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 0px;
+        }
+    }
+
+}

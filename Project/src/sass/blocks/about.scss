@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.about {
+    margin-bottom: 40px;
+    padding: 40px 40px;
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    @media only screen and (max-width: $screen_medium) {
+        margin-bottom: 40px;
+        padding: 20px 20px;
+    }
+
+    &__header {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 1.4em;
+        font-weight: normal;
+    }
+
+    &__content {
+        text-align: justify;
+
+        p {
+            margin: 0px 0px 20px;
+        }
+
+        p:last-child {
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .imageWrap {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+} 

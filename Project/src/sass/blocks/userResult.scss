@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.userResult {
+	margin-bottom: 40px;
+	padding: 20px;
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+
+	&__header {
+		margin-top: 0;
+	    margin-bottom: 15px;
+	    font-size: 1.4em;
+	    font-weight: 400;
+	    text-align: center;
+	}
+
+	&__fakeImage {
+
+		img {
+			max-width: 100%;
+			text-align: center;
+			font-size: 0px;
+		}
+	}
+
+}
+
+.userMark {
+	padding-top: 10px;
+	font-size: 2em;
+	text-align: center;
+	color: $waterGreen;
+
+	.mark {
+		font-size: 3em;
+		line-height: 1em;
+		color: $error;
+	}
+
+}
+
+.userRateTable {
+
+	.currentUser {
+		background-color: #f5f5f5;
+	}
+
+	tr {
+		border-bottom: 1px solid $grey;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+}

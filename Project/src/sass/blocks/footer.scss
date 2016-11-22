@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+.footer {
+    padding: 10px 0 50px; 
+    color: $white;  
+} 
+
+.footerWords {
+    text-align: center;
+    font-style: bold;
+    margin-bottom: 5px;
+}
+
+.madeby {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}

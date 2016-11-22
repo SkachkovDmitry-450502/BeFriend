@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.quizWrap {
+    padding: 20px 0;
+
+    @media only screen and (max-width: $screen_medium) {
+        padding: 40px 0;
+    }
+}
+
+.quiz {
+    margin-bottom: 40px;
+}
+
+.startButton {
+    display: block;
+    line-height: 120px;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center; 
+    background: #ff5722;
+    color: $white; 
+
+    &:hover {
+        background: #F44336;
+    }
+
+    &:active {
+        background: #F44336;
+    }
+
+    &:hover, &:focus, &:visited {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &.disabled {
+        background: #9e9e9e;
+    }
+
+    @media only screen and (max-width: $screen_large) {
+        margin-bottom: 20px;
+    }
+}

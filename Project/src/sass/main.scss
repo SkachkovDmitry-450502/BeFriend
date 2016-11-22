@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+body {
+    margin: 0 auto; 
+    background: $white url("../img/mp-02.png") 0 0;
+    font-family: "roboto";
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}

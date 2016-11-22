@@ -1,0 +1,70 @@
+@import "../variables.scss";
+
+.benefitsList {
+    margin-bottom: 40px; 
+
+    @media only screen and (max-width: $screen_medium) {
+        margin-bottom: 40px;
+        padding: 0;
+
+        & > div:nth-child(n + 2) {
+            display: none;
+        }
+    }
+}
+
+.benefit {  
+    margin-bottom: 40px;  
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__image {
+        text-align: center;
+
+        svg {
+            width: 150px;
+            height: 150px;
+            
+            &.hug {
+                fill: #009688;
+            }
+
+            &.happy {
+                fill: #ff9800;
+            }
+
+            &.talk {
+                fill: #673ab7;
+            }
+
+            @media only screen and (max-width: $screen_medium) {
+                width: 100px;
+                height: 100px;
+            }
+
+            @media only screen and (max-width: $screen_small) {
+                width: 60px;
+                height: 60px;
+            }  
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-style: italic;
+
+        @media only screen and (max-width: $screen_medium) {
+            font-size: 0.9em;
+        }
+
+        @media only screen and (max-width: $screen_small) {
+            font-size: 0.8em;
+        }
+    }
+
+}
